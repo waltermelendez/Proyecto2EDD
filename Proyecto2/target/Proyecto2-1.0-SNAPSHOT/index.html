@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>Login de Usuario</div>
+        <form action="LoginServlet" method="get">
+            <label for="user">Usuario:</label><br>
+            <input type="email" id="user" name="user" required autofocus/><br>
+            <label for="pass">Clave:</label><br>
+            <input type="password" id="pass" name="pass" minlength="8" required><br>
+            <input type="submit" value="LOGIN"/>
+        </form>
+    </body>
+</html>
