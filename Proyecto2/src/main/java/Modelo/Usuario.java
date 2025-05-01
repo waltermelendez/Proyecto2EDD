@@ -9,72 +9,29 @@ package Modelo;
  * @author walte
  */
 public class Usuario {
-    private int Carnet;
-    private String Nombre;
-    private int Telefono;
-    private String Correo;
-    private boolean Estado;
-    private String[][] tab = new String[20][7];
-    private int contadornota;
+    
+    private String usuario;
+    private String password;
 
-    public Usuario(int Carnet, String Nombre, int Telefono, String Correo, String[][] TAB) {
-        this.Carnet = Carnet;
-        this.Nombre = Nombre;
-        this.Telefono = Telefono;
-        this.Correo = Correo;
-        Estado = true;
-        this.tab = new String[TAB.length][TAB[0].length];
-        for (int i = 0; i < TAB.length; i++) {
-            for (int j = 0; j < TAB[0].length; j++) {
-                this.tab[i][j] = TAB[i][j];
-            }
-        }
+    public String getUsuario() {
+        return usuario;
     }
 
-    public void setTab(String[][] tab) {
-        this.tab = tab;
+    public String getPassword() {
+        return password;
     }
 
-    public Usuario() {
+    public void setUsuario(String usuario) {
+        this.usuario = usuario;
     }
 
-    public boolean isEstado() {
-        return Estado;
+    public void setPassword(String password) {
+        this.password = password;
     }
 
-    public void setEstado(boolean Estado) {
-        this.Estado = Estado;
+    public Usuario(String usuario, String password) {
+        this.usuario = usuario;
+        this.password = password;
     }
-
-    public int getCarnet() {
-        return Carnet;
-    }
-
-    public void setCarnet(int Carnet) {
-        this.Carnet = Carnet;
-    }
-
-    public String getNombre() {
-        return Nombre;
-    }
-
-    public void setNombre(String Nombre) {
-        this.Nombre = Nombre;
-    }
-
-    public int getTelefono() {
-        return Telefono;
-    }
-
-    public void setTelefono(int Telefono) {
-        this.Telefono = Telefono;
-    }
-
-    public String getCorreo() {
-        return Correo;
-    }
-
-    public void setCorreo(String Correo) {
-        this.Correo = Correo;
-    }
+    
 }

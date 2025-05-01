@@ -1,2 +1,6 @@
-com\mycompany\proyecto2\JakartaRestConfiguration.class
-com\mycompany\proyecto2\resources\JakartaEE11Resource.class
+Modelo\Estudiante.class
+Modelo\Manejo.class
+Controlador\LoginServlet.class
+Modelo\Usuario.class
+Modelo\Conexion.class
+Controlador\ADDCurso.class

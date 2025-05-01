@@ -89,7 +89,7 @@ public class Manejo {
             try {
                 ResultSet rs = cn.executeQuery(consulta);
                 while(rs.next()){
-                   // u = new Usuario(rs.getString("usuario"),rs.getString("password"));
+                    u = new Usuario(rs.getString("usuario"),rs.getString("password"));
                     System.out.println("usuario->" + u.toString());
                     ListaUsuarios.add(u);                    
                 }
