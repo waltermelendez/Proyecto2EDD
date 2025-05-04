@@ -1,6 +1,6 @@
 <%-- 
-    Document   : ADDCurso
-    Created on : 1/05/2025, 2:13:17 p. m.
+    Document   : CRUDCurso
+    Created on : 3/05/2025, 5:36:57 p. m.
     Author     : walte
 --%>
 
@@ -14,7 +14,7 @@
         <title>Agregar Curso a un estudiante</title>
     </head>
     <body>
-        <h1>Agregar Curso a un estudiante</h1>
+       <h1>Agregar Curso a un estudiante</h1>
         <div class="container mt-5">
             <form action="AddCurso" method="post">
                 
